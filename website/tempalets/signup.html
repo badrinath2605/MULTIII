@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Multiii" content="This page contains students related information">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Multiii </title>
+
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!--        <link rel="icon" href="MULTIII logo.jpg" type="image/x-icon">-->
+        <link rel="icon" href="../static/MULTIII logo.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="../static/style2.css" type="text/css">
+    </head>
+<body>
+<div id="alert-container" class="fixed-top">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category, message in messages %}
+      {% if category == 'error' %}
+        <div class="alert alert-danger alert-dismissible fade show" role="alert" align="center">
+          {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+          </button>
+        </div>
+      {% else %}
+        <div class="alert alert-success alert-dismissible fade show" role="alert" align="center">
+          {{ message }}
+           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+</div>
+<!--action="https://httpbin.org/get"-->
+
+<article id="Input_form">
+
+<form method="POST">
+<fieldset>
+<h1>Sign Up</h1>
+<label for="Full Name:">Full Name:</label>
+<input type="text" name="Full Name" placeholder="Enter your Full Name" required autofocus>
+<label for="Username"> Username: </label>
+<input type="text" name="Username" placeholder="Enter your Username" required autofocus>
+<label for="Email">Email Id:</label>
+<input type="email" name="Email" placeholder="Enter your Email Id" required autofocus>
+<label for="password">Password:</label>    
+<input type="password" name="password" placeholder="Enter your Password" required autofocus>
+<label for="password">Confirm Password:</label>
+<input type="password" name="password_conform" placeholder="Confirm your Password" required autofocus>
+<button type="submit"> Sign Up </button>
+    <!-- Button trigger modal
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Sign Up
+</button>-->
+</fieldset> 
+</form>
+<!--    <form id="form 2" method="POST" style="display: none;">-->
+<!--    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+<!--  <div class="modal-dialog">-->
+<!--    <div class="modal-content">-->
+<!--      <div class="modal-header">-->
+<!--        <h1 class="modal-title fs-5" id="exampleModalLabel">OTP Conformation</h1>-->
+<!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+<!--      </div>-->
+<!--      <div class="modal-body">-->
+<!--        enter the code:-->
+<!--      </div>-->
+<!--        <div class="mb-3">-->
+<!--            <label for="message-text" class="col-form-label">code:</label>-->
+<!--            <textarea class="form-control" id="message-text" name="code"></textarea>-->
+<!--          </div>-->
+<!--      <div class="modal-footer">-->
+<!--        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+<!--        <button type="submit" class="btn btn-primary">conform</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--    </form>-->
+<!--</article>-->
+<!-- <script>-->
+<!--    // Listen for form submission-->
+<!--    document.getElementById("form 1").addEventListener("submit", function(event) {-->
+<!--      // Prevent default form submission-->
+<!--      event.preventDefault();-->
+
+<!--      // Submit the first form using AJAX or fetch API-->
+<!--      // Example: Send form data to server-side script for processing-->
+
+<!--      // After successful submission, display the second form-->
+<!--      document.getElementById("form 2").style.display = "block";-->
+<!--    });-->
+<!--  </script>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

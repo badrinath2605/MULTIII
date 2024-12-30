@@ -1,0 +1,85 @@
+body{
+    background-color: #f9f6f3;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #222831;
+    margin-bottom: 1.5em;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #6c7c80; 
+}
+img{
+    width: 150px;
+    height: auto;
+    margin-right: 1.5em;
+}
+.buttons{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.buttons a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+.buttons a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.hero{
+    text-align: center;
+    padding: 3em;
+    color: #4e5b61;
+}
+.hero-content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+p{
+    font-size: 2em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+.highlight{
+    color: #222831;
+    font-weight: bold;
+}
+.quote-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quote-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+    width: 100%; 
+    border: 2px solid #222831; 
+    border-radius: 6px;
+    padding: 50px 50px 50px; 
+    box-sizing: border-box;
+    box-shadow: 4px 4px 6px #222831;
+}
+.quote-container img {
+    width: 450px;;
+    height: 300px;;
+    margin-right: 10px;
+}
+.quote-container p {
+    flex: 1; 
+}
+

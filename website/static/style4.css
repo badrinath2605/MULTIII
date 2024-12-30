@@ -1,0 +1,160 @@
+body {
+    background-color: #f9f6f3;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 1em;
+    padding: 1px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #222831;
+    margin-bottom: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 2em;
+    background-color: #6c7c80;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    margin-right: 1em;
+}
+
+.accountDropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.accountDropdown .accountNav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f6f3;
+    list-style: none;
+    padding: 0;
+    min-width: 100px;
+    border: 2px solid #222831;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accountDropdown .accountNav li {
+    padding: 0.5em 1em;
+}
+
+.accountDropdown .accountNav li:hover {
+    background-color: #f9f6f3;
+}
+
+.accountDropdown .accountNav.show {
+    display: block;
+}
+
+#folderNav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.create-folder-btn {
+    background-color: #6c7c80;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.created-folders {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+}
+
+.folder-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.folder-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #6c7c80;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.folder-icon {
+    font-size: 24px;
+    color: #fff;
+}
+
+.folder-name {
+    font-size: 14px;
+    color: #222831;
+    margin-top: 5px;
+}
+
+.notes-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #6c7c80;
+    color: #fff;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notes-btn:hover {
+    background-color: #55696d;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.5);
+}
+
+  
+
